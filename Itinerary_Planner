@@ -1,0 +1,28 @@
+# Simple Travel App
+
+destinations = []
+
+print("Please enter your 5 travel destinations:")
+
+# Get 5 destinations from the user
+for i in range(5):
+    place = input("Destination " + str(i + 1) + ": ")
+    destinations.append(place)
+
+print("\nOriginal Travel Itinerary:")
+for i in range(5):
+    print(str(i + 1) + ".", destinations[i])
+
+print("\nLet's update your 2nd and 5th destinations.")
+
+# Update 2nd destination (index 1)
+new_place2 = input("Enter a new destination for position 2: ")
+destinations[1] = new_place2
+
+# Update 5th destination (index 4)
+new_place5 = input("Enter a new destination for position 5: ")
+destinations[4] = new_place5
+
+print("\nUpdated Travel Itinerary:")
+for i in range(5):
+    print(str(i + 1) + ".", destinations[i])
